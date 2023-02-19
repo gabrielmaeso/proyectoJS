@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <header class="header">
+        <div class="menu container"> <!-- ACA EMPIEZA EMPIEZA EL MENU CARRITO -->
+            <a href="#" class="logo">Beff</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">asdadasd</a> </li>
+                    <li> <a href="#">asdadasd</a> </li>
+                    <li> <a href="#">asdadasd</a> </li>
+                    <li> <a href="#">asdadasd</a> </li>
+                </ul>
+            </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="images/car.svg" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>imagen</th>
+                                    <th>nombre</th>
+                                    <th>precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- ACA TERMINA EL MENU CARRITO -->
+    <div class="header-content container"> <!-- EMPIEZA -->
+
+        <h1>ASDASDASD</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Provident fugit totam omnis nihil necessitatibus sequi vitae nam qui eius eaque molestias delectus sapiente porro praesentium, 
+            accusantium veniam quam, labore distinctio!</p>
+
+        <div class="botons">
+            <a href="#" class="btn-1">Mas informacion</a>
+            <a href="#" class="btn-1">Menu</a>
+        </div>
+
+        <div class="socials-1">
+            <img src="images/s1.svg" alt="">
+            <img src="images/s2.svg" alt="">
+            <img src="images/s3.svg" alt="">
+
+        </div>
+
+        <a href="#">
+            <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+
+    </div> 
+
+    </header> <!-- TERMINA -->
+
+    <section class="recetas conteiner"> <!-- FUERA DEL HEADER -->
+
+        <div class="recetas-1">
+            <h3>135 modos de preparar carne</h3>
+            <hr>
+            <p>RECETAS</p>
+        </div>
+        <div class="recetas-2">
+            <h2>135 <br>recetas<br> de carne </h2>
+        </div>
+
+    </section>  <!-- FUERA DEL HEADER -->
+
+
+    <section class="platillos container" id="lista"> <!-- EMPIEZA LOS PLATILLOS -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl3.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl4.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section> <!-- TERMINA LOS PLATILLOS -->
+
+
+    <section class="recetas conteiner"> 
+        <div class="recetas-2">
+            <h2>100 <br>tipos<br> de carne </h2>
+        </div>
+
+        <div class="recetas-1">
+            <h3>135 modos de pedir corte</h3>
+            <hr>
+            <p>kg</p>
+        </div>
+       
+    </section>
+
+    <section class="platillos container" id="lista-2"> 
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c3.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito-btn-3" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id fuga est laudantium ut doloremque explicabo accusamus, 
+                            porro omnis sequi tempore non maxime natus, 
+                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="recetas conteiner"> 
+
+        <div class="recetas-1">
+            <hr>
+            <p>Contacto</p>
+        </div>
+       
+    </section>
+
+
+    <footer class="footer container"> <!-- FOOTER -->
+
+        <div class="links">
+            <div class="link">
+                <h3>Redes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nesciunt architecto ut error fugiat culpa hic possimus quas quam?
+                     Eveniet a sapiente rem voluptates esse magnam velit perferendis eum ea illum?
+                    </p>
+                    <div class="socials-2">
+                        <img src="images/s1.svg" alt="">
+                        <img src="images/s2.svg" alt="">
+                        <img src="images/s3.svg" alt="">
+                    </div>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <form>
+                    <input type="text" placeholder="Nombre" class="inp">
+                    <input type="email" placeholder="Email" class="inp">
+                    <textarea class="inp"></textarea>
+                    <input class="btn-4" type="submit" value="Enviar">
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer> <!-- FOOTER -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
