@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roma coffee roasters</title>
+    <link rel="shortcut icon" href="images/logo naranja.avif">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
    
     <header class="header">
         <div class="menu container"> <!-- ACA EMPIEZA EMPIEZA EL MENU CARRITO -->
-            <a href="#" class="logo">Beff</a>
+            <a href="#" class="logo" id="inicio">Roma<br>coffee<br>roasters</a>
             <input type="checkbox" id="menu">
             <label for="menu"><img src="images/menu.png" class="menu-icono" alt="menu"></label>
             <nav class="navbar">
                 <ul>
-                    <li> <a href="#">asdadasd</a> </li>
-                    <li> <a href="#">asdadasd</a> </li>
-                    <li> <a href="#">asdadasd</a> </li>
-                    <li> <a href="#">asdadasd</a> </li>
+                    <li> <a href="#inicio">Inicio</a> </li>
+                    <li> <a href="index1.html">Mi cuenta</a> </li>
+                    <li> <a href="#comprar">Comprar</a> </li>
+                    <li> <a href="#contacto">Contacto</a> </li>
                 </ul>
             </nav>
         <div>
@@ -46,202 +47,201 @@
                 </li>
             </ul>
         </div>
-    </div> <!-- ACA TERMINA EL MENU CARRITO -->
-    <div class="header-content container"> <!-- EMPIEZA -->
+    </div> 
+    <!-- TERMINA EL MENU CARRITO -->
 
-        <h1>ASDASDASD</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Provident fugit totam omnis nihil necessitatibus sequi vitae nam qui eius eaque molestias delectus sapiente porro praesentium, 
-            accusantium veniam quam, labore distinctio!</p>
+    <div class="header-content container"> <!-- div pricipal -->
+
+        <h1>Cafe de especialidad</h1>
+        <p>Desde 2016 participamos de la transformación de consumo y educación de la cultura cafetera en Argentina.
+             Cuidamos todos los procesos, desde la selección del café en su finca de origen, 
+             hasta la taza que se sirve en cada local que proveemos</p>
 
         <div class="botons">
-            <a href="#" class="btn-1">Mas informacion</a>
-            <a href="#" class="btn-1">Menu</a>
+            <a href="#contacto" class="btn-1">Mas informacion</a>
+            <a href="#ofertas" class="btn-1">Ofertas</a>
         </div>
 
         <div class="socials-1">
             <img src="images/s1.svg" alt="">
             <img src="images/s2.svg" alt="">
             <img src="images/s3.svg" alt="">
-
         </div>
 
-        <a href="#">
+        <a href="#lista">
             <img class="arrow" src="images/arrow.svg" alt="">
         </a>
-
     </div> 
 
-    </header> <!-- TERMINA -->
+    </header> <!-- termina div pricipal -->
 
-    <section class="recetas conteiner"> <!-- FUERA DEL HEADER -->
+    <section class="cafes container" id="comprar"> <!-- FUERA DEL HEADER // cafe en 1/4 -->
 
-        <div class="recetas-1">
-            <h3>135 modos de preparar carne</h3>
+        <div class="p-1">
+            <h3>Cafe de origen</h3>
             <hr>
-            <p>RECETAS</p>
+            <p>Molido o en granos!</p>
         </div>
-        <div class="recetas-2">
-            <h2>135 <br>recetas<br> de carne </h2>
+        <div class="p-2">
+            <h2>Mas <br>populares<br> del mes </h2>
         </div>
 
     </section>  <!-- FUERA DEL HEADER -->
 
 
-    <section class="platillos container" id="lista"> <!-- EMPIEZA LOS PLATILLOS -->
+    <section class="cuartos container" id="lista"> <!-- empieza los cafe en 1/4 -->
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
-                        <p class="precio">$200</p>
-                        <img src="images/pl1.png" alt="">
+                    <div class="cuarto">
+                        <h3>Brasil | 250g</h3>
+                        <p class="precio">$1.600</p>
+                        <img src="images/cafe cuarto.jpg" alt="">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        Brasil: <br>
+                        Notas: Pomelo rosado,cacao. <br>
+                        Proceso: natural. <br> 
+                        1600 metros de altura.
                         </p>
                         <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
-                        <p class="precio">$200</p>
-                        <img src="images/pl2.png" alt="">
+                    <div class="cuarto">
+                        <h3>Colombia | 250g</h3>
+                        <p class="precio">$2.000</p>
+                        <img src="images/cafe cuarto.jpg" alt="">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                            Colombia: <br>
+                            Notas: naranja y miel. <br>
+                            Proceso lavado. <br> 
+                            2400 metros de altura.
                         </p>
                         <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
+                    <div class="cuarto">
+                        <h3>Guatemala | 250g</h3>
                         <p class="precio">$200</p>
-                        <img src="images/pl3.png" alt="">
+                        <img src="images/cafe cuarto.jpg" alt="">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                            Guatemala: <br>
+                            Notas: uva, azucar rubia. <br>
+                            Proceso: semi lavado. <br> 
+                            2200 metros de altura.
                         </p>
                         <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
+                    <div class="cuarto">
+                        <h3>Honduras | 250g</h3>
                         <p class="precio">$200</p>
-                        <img src="images/pl4.png" alt="">
+                        <img src="images/cafe cuarto.jpg" alt="">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                            Honduras: <br>
+                            Notas: ceraza,chocolate. <br>
+                            Proceso: honey. <br> 
+                            2000 metros de altura.
                         </p>
-                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4" >Agregar al carrito</a>
                     </div>
                 </div>
 
             </div>
-
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-
         </div>
 
-    </section> <!-- TERMINA LOS PLATILLOS -->
+    </section> <!-- termina los cafe en 1/4 -->
 
 
-    <section class="recetas conteiner"> 
-        <div class="recetas-2">
-            <h2>100 <br>tipos<br> de carne </h2>
+      <!-- SEC/DIV 2 NOVEDADES -->
+
+    <section class="cafes container" id="ofertas"> 
+        <div class="p-2">
+            <h2>Oferta <br>del<br>mes</h2>
         </div>
 
-        <div class="recetas-1">
-            <h3>135 modos de pedir corte</h3>
+        <div class="p-1">
+            <h3>Hasta agortar stock !</h3>
             <hr>
-            <p>kg</p>
+            <p>Pedilo molido o en granos</p>
         </div>
        
     </section>
 
-    <section class="platillos container" id="lista-2"> 
+    <!-- SEC/DIV 2 NOVEDADES -->
+
+
+    <!-- antes del footer -->
+
+    <section class="cuartos container" id="lista-2"> 
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
-                        <p class="precio">$200</p>
-                        <img src="images/c1.png" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                    <div class="cuarto">
+                        <h3 class="c1">Brasil + Colombia</h3>
+                        <p class="precio">$3000</p>
+                        <img src="images/bolsa cafe cuarto x2.jpg" alt="">
+                        <p class="c2">
+                            Ideal para los <br>
+                            amantes de cafe con leche <br>
+                            <br> 
                         </p>
                         <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
-                        <p class="precio">$200</p>
-                        <img src="images/c2.png" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                    <div class="cuarto">
+                        <h3 class="c1">El salvador</h3>
+                        <p class="precio">$1.800</p>
+                        <img src="images/cafe cuarto.jpg" alt="">
+                        <p class="c2">
+                            Un cafe con mucho cuerpo<br>
+                            ideal para tomar solo<br>
+                            o cortado<br>
                         </p>
                         <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
+                    <div class="cuarto">
+                        <h3 class="c1">Peru + Kenia</h3>
                         <p class="precio">$200</p>
-                        <img src="images/c3.png" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                        <img src="images/bolsa cafe cuarto x2.jpg" alt="">
+                        <p class="c2">
+                        Perfecto para las<br>
+                        personas que les gusta el<br>
+                        cafe acido y citrico <br> 
                         </p>
-                        <a href="#" class="agregar-carrito-btn-3" data-id="7">Agregar al carrito</a>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="platillo">
-                        <h3>Corte americano</h3>
-                        <p class="precio">$200</p>
-                        <img src="images/c1.png" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id fuga est laudantium ut doloremque explicabo accusamus, 
-                            porro omnis sequi tempore non maxime natus, 
-                            eos consectetur officia quasi consequatur voluptatem cumque?
+                    <div class="cuarto">
+                        <h3 class="c1">Colombia + Peru</h3>
+                        <p class="precio">$3300</p>
+                        <img src="images/bolsa cafe cuarto x2.jpg" alt="">
+                        <p class="c2">
+                        Ambos super citricos<br>
+                        con aromas agradables <br>
+                        ideal para tomar solo o<br> 
+                        en filtro
                         </p>
                         <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
                     </div>
                 </div>
-
             </div>
 
             <div class="swiper-button-next"></div>
@@ -251,10 +251,14 @@
         </div>
 
     </section>
+    <!-- antes del footer -->
 
-    <section class="recetas conteiner"> 
 
-        <div class="recetas-1">
+    <!-- footer -->
+
+    <section class="cafes container"> 
+
+        <div class="p-1">
             <hr>
             <p>Contacto</p>
         </div>
@@ -262,15 +266,13 @@
     </section>
 
 
-    <footer class="footer container"> <!-- FOOTER -->
+    <footer class="footer container" id="contacto">
 
         <div class="links">
             <div class="link">
-                <h3>Redes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nesciunt architecto ut error fugiat culpa hic possimus quas quam?
-                     Eveniet a sapiente rem voluptates esse magnam velit perferendis eum ea illum?
-                    </p>
+                <h3>¿Querés sumarte a nuestra membresía?</h3>
+                <p>¡No vuelvas a quedarte (nunca, jamás) sin café! <br> 
+                    Pedilo tambien a traves de nuestras redes! </p>
                     <div class="socials-2">
                         <img src="images/s1.svg" alt="">
                         <img src="images/s2.svg" alt="">
@@ -279,46 +281,38 @@
             </div>
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Sobre nosotros</h3>
                 <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Nuestra misión</a></li>
+                    <li><a href="#">Nuestra cultura inclusiva y valores</a></li>
+                    <li><a href="#">Nuestro café</a></li>
+                    <li><a href="#">Comunicados oficiales</a></li>
                 </ul>
 
             </div>
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Experiencia Roma</h3>
                 <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Formas de comprar</a></li>
+                    <li><a href="#">Delivery</a></li>
+                  
                 </ul>
 
             </div>
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Contactanos!</h3>
                 <form>
                     <input type="text" placeholder="Nombre" class="inp">
                     <input type="email" placeholder="Email" class="inp">
-                    <textarea class="inp"></textarea>
+                    <textarea class="inp" placeholder="Dejanos tu mensaje"></textarea>
                     <input class="btn-4" type="submit" value="Enviar">
                 </form>
-
             </div>
-
         </div>
-
     </footer> <!-- FOOTER -->
-
-
-
 
 
 

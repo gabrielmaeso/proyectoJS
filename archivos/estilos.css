@@ -1,7 +1,481 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 
-body {
+
+body{
     font-family: 'Poppins', sans-serif; 
     background-color: #252326;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    color: orangered;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+    font-weight: 600;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: orangered;
+}
+
+#menu {
+    display: none;
+
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #8b7e7b;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 400px;
+
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    color: aliceblue;
+}
+
+td{
+    color: aliceblue;
+}
+
+.borrar{
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.header-content{
+    position: relative;
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+.header-content h1{
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.header-content p{
+    font-size: 18px;
+    padding: 0 200px;
+    color: #8b7e7b;
+    margin-bottom: 80px;
+}
+
+.botons{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1{
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    padding: 13px 0;
+    border-radius: 25px;
+    color:aliceblue;
+    text-transform: uppercase;
+    background-color: orangered;
+}
+
+.btn-1:hover{
+    background-color: rgba(255, 187, 0, 0.918);
+}
+
+.socials-1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+
+}
+
+.socials-1 img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+}
+
+.cafes{
+    display: flex;
+    padding: 120px 0;
+
+}
+
+.p-1{
+    width: 50%;
+
+}
+
+.p-1 h3{
+    font-size: 18px;
+    color: white;
+}
+
+.p-1 p{
+    color: orangered;
+}
+
+.p-1 hr{
+    margin: 10px 0;
+    border: 1px solid rgba(128, 128, 128, 0.151);
+}
+
+.p-2{
+    width: 50%;
+    text-align: center;
+}
+
+.p-2 h2{
+    font-size: 55px;
+    line-height: 55px;
+    color: aliceblue;
+}
+
+.cuarto{
+    padding: 50px 0;
+
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-prev{
+    color: orangered;
+}
+
+.swiper-button-next{
+    color: orangered;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
+    opacity: 1;
+    top: 50px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: orangered;
+}
+
+.cuarto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+
+}
+
+.cuarto h3{
+    font-size: 16px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.precio{
+    font-size: 18px;
+    color: orangered;
+
+}
+
+.cuarto img{
+    width: 200px;
+}
+
+.cuarto p{
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 15px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgba(255, 68, 0, 0.562);
+    color: aliceblue;
+    font-size: 14px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.btn-2:hover:hover{
+    background-color: rgba(255, 187, 0, 0.918);
+}
+
+.c1, .c2{
+    color: #8b7e7b !important;
+}
+
+.btn-3{
+    display: inline-block;
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: 1px solid white;
+}
+
+.btn-3:hover{
+    background-color: orangered;
+    border: 1px solid white;
+}
+
+.footer{
+    padding: 50px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    width: 25%;
+}
+
+.link h3{
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.link p{
+    color: #8b7e7b;
+    font-size: 14px;
+    margin: 0 50px 15px 0
+}
+
+.link ul li a{
+    display: inline-block;
+    font-size: 14px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.socials-2 img{
+    width: 20px;
+    height: 20px;
+}
+
+.link form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inp{
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-4{
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: aliceblue;
+}
+
+@media (max-width: 991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #8b7e7b;
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 150px;
+    }
+
+    .header-content h1{
+        font-size: 40px;
+    }
+
+    .header-content p{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .botons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-1{
+        margin: 0 0 20px 0;
+    }
+
+    .socials-1{
+        display: none;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .cafes{
+        flex-direction: column;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .recetas-1{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .cafes-2 {
+        width: 100%;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link{
+        width: 70%;
+    }
+
+    .link p{
+        margin: 0 0 25px 0;
+    }
+
+    .socials-2{
+        margin-bottom: 15px;
+    }
 }
